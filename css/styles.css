@@ -70,7 +70,7 @@ a{
 /*навигационная панель*/
 
 .nav-bar{
-	display: flex;   
+	display: flex;
 }
 .nav-bar li{
     display: inline-block;
@@ -88,10 +88,10 @@ a{
 }
 .nav-bar li:hover{
 	background: #72b13a;
-	
+
 }
 .nav-bar li:hover a{
-	color: white; 
+	color: white;
 	border-right: none;
 }
 
@@ -119,7 +119,7 @@ a{
     text-transform: none;
 }
 .nav-bar li ul li:hover{
-	background-color: #f7f7f7; 
+	background-color: #f7f7f7;
 }
 
 .search-space{
@@ -189,10 +189,10 @@ a{
     right: 15%;
 }
 .product-line-box:first-child {
-	margin-right: 15px; 
+	margin-right: 15px;
 }
 .product-line-box:last-child{
-	margin-left: 15px; 
+	margin-left: 15px;
 }
 .product-line-box p{
 	font-size: 15px;
@@ -228,7 +228,7 @@ a{
 @media screen and (max-width: 1023px){
 		.wrapper{
 			width: 768px;
-			padding: 0 5px;
+			padding: 0 10px;
 		}
 		.nav-bar li{
 		    font-size: 14px;
@@ -236,7 +236,7 @@ a{
 		}
 		.nav-bar li a {
     		padding: 1px 8px;
-		}	
+		}
 
 		.search-space {
     		padding: 9px 0 0;
@@ -250,19 +250,19 @@ a{
 		    height: 160px;
 		}
 		.product-line-box:first-child {
-			margin-right: 8px; 
+			margin-right: 8px;
 		}
 		.product-line-box:last-child{
-			margin-left: 8px; 
+			margin-left: 8px;
 		}
-		
+
 		.slider-1{
 			height: 460px;
 		}
 		.slide-wrapper{
 			width: 50%;
 		}
-		
+
 }
 @media screen and (min-width: 769px){
 	.nav-bar{
@@ -301,7 +301,7 @@ a{
     		background: none;
 		}
 		.nav-bar li a{
-			border-right: none; 
+			border-right: none;
 		}
 		.search-space{
 			padding: 0;
@@ -310,7 +310,7 @@ a{
 			width: 19px;
 		}
 		.nav-content-block{
-			padding: 5px;
+			padding: 7px 15px;
 		}
 		.logo-box{
 			align-items: initial;
@@ -337,7 +337,7 @@ a{
 @media screen and (max-width: 425px){
 		.logo-block{
 			flex-direction: column;
-			padding-top: 25px;
+			padding-top: 35px;
 		}
 
 		.logo-box, .contact-info-box p{
@@ -348,7 +348,7 @@ a{
 			width: 100%;
 		}
 		.logo-box::after{
-			top: -20px;
+			top: -30px;
 			right: inherit;;
 			left: 0;
 			bottom: inherit;
