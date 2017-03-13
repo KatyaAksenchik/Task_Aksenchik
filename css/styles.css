@@ -1,0 +1,367 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	color: #505c5c;
+}
+
+.wrapper{
+	width: 1170px;
+	margin: 0 auto;
+	position: relative;
+}
+a{
+	text-decoration: none;
+}
+
+/*логотип + контактная информация*/
+.logo-block{
+	display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo-box{
+	position: relative;
+    align-items: flex-end;
+    display: flex;
+}
+.logo-box::after{
+	content: "®     Ремодулятор матрикса кожи";
+    position: absolute;
+    top: 0;
+    right: -220px;
+    font-size: 14px;
+}
+.contact-info-box p{
+	text-align: right;
+}
+.write-us-text{
+	border-bottom: 1px dotted black;
+	font-size: 13px;
+}
+.phone-text{
+	font-weight: bold;
+}
+.contact-text{
+	padding-bottom: 10px;
+}
+.contact-text img{
+    vertical-align: -4px;
+    margin-right: 4px;
+}
+
+.nav-content-block{
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-panel{
+	border-top: 1px solid lightgrey;
+}
+.nav-media{
+	display: none;
+}
+.nav-media img{
+	cursor: pointer;
+}
+
+/*навигационная панель*/
+
+.nav-bar{
+	display: flex;   
+}
+.nav-bar li{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 44px;
+    position: relative;
+}
+.last-child-li{
+	    border-right: none !important;
+}
+.nav-bar li a{
+	padding: 0 25px;
+    border-right: 1px solid lightgrey;
+}
+.nav-bar li:hover{
+	background: #72b13a;
+	
+}
+.nav-bar li:hover a{
+	color: white; 
+	border-right: none;
+}
+
+/*дополнительный выпадающий список*/
+
+
+.nav-bar li ul{
+	display: none;
+}
+.nav-bar li:hover ul{
+ 	display: block;
+    position: absolute;
+    min-width: 270px;
+    left: 0;
+    margin-top: -1px;
+    background-color: white;
+    z-index: 100;
+    border-top: 2px solid #72b13a;
+}
+.nav-bar li ul li{
+	width: 100%;
+}
+.nav-bar li:hover ul li a{
+	color: #505c5c;
+    text-transform: none;
+}
+.nav-bar li ul li:hover{
+	background-color: #f7f7f7; 
+}
+
+.search-space{
+	padding: 10px 0;
+}
+
+
+/*slider*/
+.slide-wrapper{
+	width: 500px;
+    padding-top: 19%;
+}
+
+.owl-theme .owl-controls .owl-page span{
+    background: #c9e0c2;
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
+    background: #72b13a;
+}
+.owl-theme .owl-controls {
+    margin-top: -35px;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+
+.slider-1{
+	background: url("../images/slider.jpg") no-repeat scroll center top / cover;
+	height: 560px;
+}
+.slide-wrapper h2{
+	font-weight: bold;
+    font-size: 31px;
+}
+.slide-wrapper p{
+	padding: 18px 0px;
+}
+.more-btn{
+	color: white;
+	background-color: #354343;
+	padding: 7px 15px;
+	outline: none;
+    border: none;
+}
+
+/*инф о продукте*/
+
+.product-line-block{
+	display: flex;
+    padding: 60px 0 47px;
+}
+.product-line-box{
+	border: solid 1px lightgrey;
+     padding: 30px 16% 30px 30px;
+    position: relative;
+}
+.product-line-box h2{
+	background-color: white;
+    padding: 0 15px;
+    margin-top: -46px;
+    position: absolute;
+    margin-left: -15px;
+}
+.product-line-box img{
+	position: absolute;
+    bottom: 0;
+    right: 15%;
+}
+.product-line-box:first-child {
+	margin-right: 15px; 
+}
+.product-line-box:last-child{
+	margin-left: 15px; 
+}
+.product-line-box p{
+	font-size: 15px;
+}
+.go-to-catalogue{
+	text-decoration: none;
+	padding-top: 13px;
+    display: block;
+}
+.go-to-catalogue div{
+	border-top: 3px solid transparent;
+    border-left: 5px solid #354343;
+    border-bottom: 3px solid transparent;
+    display: inline-block;
+    vertical-align: 1px;
+}
+
+
+@media screen and (max-width: 1170px){
+		.wrapper{
+			width: 1024px;
+			padding: 0 10px;
+		}
+		.product-line-box img{
+			right: 10%;
+		}
+		.nav-bar li a{
+			padding: 1px 20px;
+		}
+
+}
+
+@media screen and (max-width: 1023px){
+		.wrapper{
+			width: 768px;
+			padding: 0 5px;
+		}
+		.nav-bar li{
+		    font-size: 14px;
+		    line-height: 33px;
+		}
+		.nav-bar li a {
+    		padding: 1px 8px;
+		}	
+
+		.search-space {
+    		padding: 9px 0 0;
+		}
+		.search-space img{
+			width: 14px;
+		}
+
+		.product-line-box img {
+		    right: 7%;
+		    height: 160px;
+		}
+		.product-line-box:first-child {
+			margin-right: 8px; 
+		}
+		.product-line-box:last-child{
+			margin-left: 8px; 
+		}
+		
+		.slider-1{
+			height: 460px;
+		}
+		.slide-wrapper{
+			width: 50%;
+		}
+		
+}
+@media screen and (min-width: 769px){
+	.nav-bar{
+		display: flex !important;
+	}
+}
+
+
+@media screen and (max-width: 768px){
+		.wrapper{
+			width: 100%;
+		}
+		.product-line-block{
+			flex-direction: column;
+			padding-top: 25px
+		}
+		.product-line-box:first-child, .product-line-box:last-child {
+			margin: 0;
+			margin-top: 6%;
+		}
+		.nav-media{
+			display: block;
+		}
+		.nav-bar {
+		    display: none;
+		    flex-direction: column;
+		    position: absolute;
+		    background-color: white;
+		    z-index: 100;
+		    top: 28px;
+		    left: 0px;
+		    width: 280px;
+		}
+		.nav-bar li{
+			width: 100%;
+    		background: none;
+		}
+		.nav-bar li a{
+			border-right: none; 
+		}
+		.search-space{
+			padding: 0;
+		}
+		.search-space img{
+			width: 19px;
+		}
+		.nav-content-block{
+			padding: 5px;
+		}
+		.logo-box{
+			align-items: initial;
+		}
+		.logo-box::after{
+			top: inherit;
+		    bottom: -5px;
+		    right: 0;
+		}
+		.product-line-box{
+			padding-right: 28%;
+		}
+		.slider-1 {
+    		height: 400px;
+		}
+		.nav-bar li:hover ul{
+			position: initial;
+		}
+		.nav-bar li:hover ul li a{
+			padding-left: 25px;
+		}
+
+}
+@media screen and (max-width: 425px){
+		.logo-block{
+			flex-direction: column;
+			padding-top: 25px;
+		}
+
+		.logo-box, .contact-info-box p{
+			text-align: center;
+			padding-bottom: 0;
+		}
+		.logo-box a{
+			width: 100%;
+		}
+		.logo-box::after{
+			top: -20px;
+			right: inherit;;
+			left: 0;
+			bottom: inherit;
+		}
+		.product-line-box h2{
+			font-size: 21px;
+			margin-top: -42px;
+		    margin-left: -22px;
+		}
+		.slide-wrapper h2{
+			font-size: 25px;
+		}
+		p, a{
+			font-size: 15px;
+		}
+}
